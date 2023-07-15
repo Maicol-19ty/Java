@@ -1,17 +1,21 @@
+package Clase1;
+
 import java.util.Scanner;
 
-public class Suma {
+public class Potenciacion {
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese el primer numero: ");
-        int numero1 = scanner.nextInt();
+        double base = scanner.nextDouble();
 
         System.out.print("Ingrese el segundo numero: ");
-        int numero2 = scanner.nextInt();
+        double exponente = scanner.nextDouble();
 
-        int resultado = numero1 + numero2;
+        double resultado = Math.pow(base, exponente);
+
         System.out.print("El resultado es: " + resultado);
 
         scanner.close();
